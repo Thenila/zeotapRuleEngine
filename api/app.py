@@ -12,7 +12,7 @@ def read_root():
 
 # Define a Node structure for the AST
 class Node(BaseModel):
-    type: str  # "operator" for AND/OR, "operand" for conditions
+    type: str  # "operator" for AND/OR, "operand" for condition
     left: Optional['Node'] = None
     right: Optional['Node'] = None
     value: Optional[Union[str, int, float]] = None
